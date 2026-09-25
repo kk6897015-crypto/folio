@@ -1,20 +1,28 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Folio
 
-# Run and deploy your AI Studio app
+AI Studio portfolio application.
 
-This contains everything you need to run your app locally.
+## Overview
+Folio is a web application generated around the Google AI Studio workflow and intended to be developed locally with Node.js.
 
-View your app in AI Studio: https://ai.studio/apps/8089d522-ddce-4fea-a815-e6565a1e0da0
+## Tech stack
+- Node.js
+- React / frontend application
+- Google AI Studio
+- Gemini API
 
-## Run Locally
+## Local development
+```bash
+npm install
+npm run dev
+```
 
-**Prerequisites:**  Node.js
+Set `GEMINI_API_KEY` in `.env.local` before using Gemini-powered features.
 
+## Repository structure
+- `src/` — application source
+- `public/` — static assets
+- `docs/` — documentation
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Security
+Never commit `.env.local` or API keys.
